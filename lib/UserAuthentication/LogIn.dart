@@ -4,11 +4,11 @@ import 'package:flutter_tic_tac_toe/screens/Vault/AuthScreen.dart';
 
 class LoginScreen extends StatelessWidget {
 
-  // final TextEditingController emailController = TextEditingController(text: 'deep@gmail.com');
-  // final TextEditingController passwordController = TextEditingController(text: '123456');
+  final TextEditingController emailController = TextEditingController(text: 'deep@gmail.com');
+  final TextEditingController passwordController = TextEditingController(text: '123456');
 
-  final TextEditingController emailController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+  // final TextEditingController emailController = TextEditingController();
+  // final TextEditingController passwordController = TextEditingController();
 
   Future<void> _login(BuildContext context) async {
     try {
