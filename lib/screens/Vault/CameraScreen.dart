@@ -280,9 +280,9 @@ class _CameraScreenState extends State<CameraScreen> with WidgetsBindingObserver
                         return GestureDetector(
                           behavior: HitTestBehavior.opaque,
                           child: Container(
-                            width: constraints.maxWidth,   // Use the available width
-                            height: constraints.maxHeight - 80, // Use the available height
-                            child: CameraPreview(_controller), // The camera preview
+                            width: constraints.maxWidth,
+                            height: constraints.maxHeight - 80,
+                            child: CameraPreview(_controller),
                           ),
                         );
                       },
