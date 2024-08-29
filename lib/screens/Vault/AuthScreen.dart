@@ -117,7 +117,15 @@ class _AuthScreenState extends State<AuthScreen> {
                   fit: BoxFit.fitHeight,
                 ),
                 const SizedBox(height: 10),
-                const Text("Powered by QuickShield",style: TextStyle(color: Colors.green),),
+                const Text.rich(
+                  TextSpan(
+                    text: "Powered by ",style: TextStyle(fontFamily: 'Lato',color: Colors.white),
+                    children: <TextSpan>[
+                      TextSpan(text: "QuickShield",style: TextStyle(fontFamily: 'Lato',color: Colors.green,fontWeight: FontWeight.bold))
+                    ]
+                  )
+                ),
+                // const Text("Powered by QuickShield",style: TextStyle(color: Colors.green),),
                 const SizedBox(height: 80),
                 // Button for authenticate
                 Padding(

@@ -210,7 +210,6 @@ class _CameraScreenState extends State<CameraScreen> with WidgetsBindingObserver
     }
   }
 
-
   Future<void> _uploadToFirebase(File file) async {
     try {
       User? user = FirebaseAuth.instance.currentUser;
